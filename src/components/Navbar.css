@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(253, 242, 236);
+  padding: 16px 24px;
+  font-family: sans-serif;
+  width: 100%;
+  opacity: 1;
+  position: relative;
+  height: min-content;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+.Links{
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  height: 46px;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: min-content;
+  
+}
+.img{
+  display: flex;
+}
+
+
+/* Link styling */
+.navbar a {
+  text-decoration: none;
+  color: rgb(7, 6, 27);
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s; /* Adding transition for smooth color change */
+}
+
+.navbar a:hover {
+  color: rgb(86, 11, 237); /* Change the color on hover to purple */
+}
+
+/* Dot styling */
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  /* background-color: grey; */
+  background-color: rgb(118, 117, 117);
+  margin: 0 5px;
+  
+}
+.logo {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 10%; /* Rounded corners for circular logos */
+  margin-right: 20px; /* Margin between logo and links */
+}
+.dot{
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background-color: grey;
+margin: 0 5px;
+}
+.template{
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none;
+  background-color: white;
+  font-size: 16px;
+  height: 48px;
+  width: 150.2px;
+}
+
+.text-framer{
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+.text-buy{
+  justify-content: center;
+  font-weight: 600;
+  color:black
+}
+
+.template:hover{
+  border-color: black;
+}
+a.buy-template:hover{
+  color: black;
+}
+.text-framer:hover{
+  color: black;
+}
+.text-buy:hover{
+  color: black;
+} 
+.hamburger-menu{
+display:none;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    height: 100%vh;
+  }
+
+  .Links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .template {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .mobile-menu-link.links{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px; Adjust spacing between links */
+    display: grid;
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-menu-link .Links.template {
+    margin: 5px 0; /* Adjust vertical spacing for links */
+    width: 100%; /* Make links take full width */
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  /* Hide dots on mobile menu */
+  .mobile-menu-link .dot {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 0.25px solid;
+    border-color:  rgba(130, 71, 255, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    /* max-width: -moz-fit-content; */
+    /* max-width: fit-content; */
+    height: 15.6px;
+    width: 240.86px;
+  }
+  
+  /* Icon container */
+  .icon-container {
+    margin-right: 10px;
+  }
+  
+  /* Rich text styles */
+  .welcome-message p {
+    color: #8247ff;
+    font-weight: bold;
+    margin: 0;
+    height: 14.4px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+  }
+  @media screen and (max-width: 768px) {
+    .heading-container {
+      width: 100%; /* Make it full width on smaller screens */
+      max-width: fit-content; /* Limit the maximum width for smaller screens */
+      margin: 0 auto; /* Center the container */
+      padding: 10px; /* Adjust padding for better spacing */
+    }
+  
+    .icon-container {
+      margin-right: 8px; /* Adjust margin for smaller screens */
+    }
+  
+    .welcome-message p {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  }

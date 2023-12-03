@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+    height: 200px;
+    font-family: "Outfit", sans-serif;
+}
+.m-heading{
+    height: 200px;
+}
+.header h1{
+    font-size: 85px;
+    line-height: 1.2;
+}
+.strategic{
+    line-height: 1;
+    color: #FE8162;
+}
+@media screen and (max-width: 1180px) {
+    .header {
+      height: auto; /* Adjust height as needed for smaller screens */
+      padding: 20px; /* Add padding for better spacing */
+    }
+  
+    .m-heading {
+      height: auto; /* Adjust height as needed for smaller screens */
+    }
+  
+    .header h1 {
+      font-size: 50px; /* Adjust font size for smaller screens */
+    }
+  }

@@ -1,0 +1,200 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(253, 242, 236);
+  padding: 16px 24px;
+  font-family: sans-serif;
+  width: 100%;
+  opacity: 1;
+  position: relative;
+  height: min-content;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  }
+  .menu-link{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-link ul {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: 46px;
+    justify-content: space-between;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: min-content;
+    
+  }
+ .menu-link ul li{
+    text-decoration: none;
+    color: rgb(7, 6, 27);
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+ }
+  .img{
+    display: flex;
+  }
+  .new{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Link styling */
+  .menu-link ul {
+    text-decoration: none;
+    color: rgb(7, 6, 27);
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s; /* Adding transition for smooth color change */
+    cursor: pointer;
+  }
+  
+  .menu-link ul li:hover {
+    color: rgb(86, 11, 237); /* Change the color on hover to purple */
+  }
+  
+  ul .list-item{
+    list-style-type: none;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    border-radius: 10%; /* Rounded corners for circular logos */
+    margin-right: 20px; /* Margin between logo and links */
+  }
+ 
+  .template{
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    height: 48px;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    border: 2px solid transparent; /* Initial transparent border */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none;
+    background-color: white;
+    font-size: 16px;
+    height: 48px;
+    width: 150.2px;
+   
+  }
+  .buy-template {
+    text-decoration: none;
+  }
+ 
+  .text-framer{
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+  }
+  .text-buy{
+    justify-content: center;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+  }
+
+.template:hover{
+    border-color: black;
+}
+a.buy-template:hover{
+    color: black;
+}
+.text-framer:hover{
+    color: black;
+}
+.text-buy:hover{
+    color: black;
+} 
+.hamburger-menu{
+  display:none;
+}
+
+
+@media screen and (max-width: 990px) {
+    
+    .main-nav {
+        height: 7rem;
+        grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+      }
+    
+      .menu-link {
+        display: none;
+      }
+    
+      .logo {
+        margin-right: auto; 
+        margin-bottom: 10px;
+      }
+    
+      .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+      }
+    
+      .mobile-menu-link {
+        background-color: white;
+        height: 100;
+        width:97%;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3 rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+    
+      .mobile-menu-link ul {
+        height: auto;
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; 
+        list-style: none;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+      }
+    
+      .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+      }
+      .mobile-menu-link li{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+      }
+      .template {
+        display: none; /* Hide the templates */
+      }
+      .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+        color: black;
+      }
+      .new {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+      }
+    }

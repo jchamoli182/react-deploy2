@@ -1,0 +1,18 @@
+.wrap{
+    display: flex;
+    width: 448.85px;
+    height: 86px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .wrap {
+      width: 100%; /* Adjust width for smaller screens */
+      max-width: 400px; /* Set a maximum width for smaller screens */
+      height: auto; /* Allow height to adjust based on content */
+      flex-wrap: wrap; /* Allow items to wrap if space is limited */
+      padding: 5px; /* Adjust padding for smaller screens */
+      height: 120px;
+    }
+  }

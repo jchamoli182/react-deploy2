@@ -1,0 +1,14 @@
+.main-header{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 242, 236);
+}
+@media screen and (max-width: 768px) {
+    .main-header {
+      padding: 40px; /* Adjust padding for smaller screens */
+      width: fit-content;
+    }
+  }

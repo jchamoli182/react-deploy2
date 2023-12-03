@@ -1,0 +1,73 @@
+.custom-button {
+    position: relative;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color:rgb(130, 71, 255);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    height: 56px;
+    width: 211px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text{
+    color: azure;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .text { 
+    transition: transform 0.3s;
+  }
+  .arrow svg {
+    fill: white; /* Change the color of the arrow here */
+    transition: fill 0.3s; /* Optional: Add transition effect */
+    
+  }
+  
+  .arrow {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .custom-button:hover {
+    box-shadow: rgba(130, 71, 255, 0.2) 0px 0px 0px 8px; /* Adjust shadow values as needed */
+  }
+  
+  /* Adjust the position of text and arrow on hover */
+  .custom-button:hover .text {
+    transform: translateX(-5px); /* Adjust the amount as needed */
+  }
+  
+  /* Show the arrow on hover */
+  .custom-button:hover .arrow {
+    opacity: 2;
+  }
+  @media screen and (max-width: 768px) {
+    .custom-button {
+      width: 160px; /* Adjust width for smaller screens */
+      height: 48px; /* Adjust height for smaller screens */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  
+    .text {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  @media screen and (max-width: 801px) {
+    .custom-button {
+      width: 97%; 
+      margin: 0 auto; 
+      height: 100; 
+      padding: 10px 20px;
+      border-radius: 18px;
+    }
+  
+    .text {
+      font-size: 20px; 
+    }
+  }
